@@ -1,9 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Catzilla</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-img *ngIf="imageSrc !== null" [src]="imageSrc"></ion-img>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="random"
+        ><ion-icon name="home"></ion-icon
+      ></ion-tab-button>
+      <ion-tab-button tab="searching"
+        ><ion-icon name="search"></ion-icon
+      ></ion-tab-button>
+      <ion-tab-button tab="favourites"
+        ><ion-icon name="heart"></ion-icon
+      ></ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
